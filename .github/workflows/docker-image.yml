@@ -17,7 +17,7 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       uses: docker/build-push-action@v1
-        with:
+      with:
           username: mbeheiry
           password: Safia90&&
           repository: mbeheiry/testing_1
