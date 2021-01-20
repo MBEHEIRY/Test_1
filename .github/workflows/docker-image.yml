@@ -16,3 +16,9 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      uses: docker/build-push-action@v1
+        with:
+          username: mbeheiry
+          password: Safia90&&
+          repository: mbeheiry/testing_1
+          tag_with_ref: true
